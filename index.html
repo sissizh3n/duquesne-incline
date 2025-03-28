@@ -4,42 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duquesne Incline</title>
-    <!-- <meta name="author" content="Your name">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Your name professional website"> -->
     <link rel="stylesheet" href="static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./static/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="static/banner.png" alt="A picture of the incline" width="1280">
-        <h1>Duquesne Incline</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="views/about.html">About</a>
-            <a href="views/fares.html">Hours & Fares</a> 
-            <a href="views/visitor.html">Visitor Details</a>
-            <a href="views/trip.html">Field Trip Program</a>
-            <a href="views/tours.html">City Tours</a>
-            <a href="views/shop.html">Gift Shop</a>
-        </nav>
+        <div id="sticky-header">
+            <h2 class="container">Duquesne Incline</h2>
+            <nav class="container">
+                <a class="current-page" href="index.html">Home</a>
+                <a href="views/about.html">About</a>
+                <a href="views/fares.html">Hours & Fares</a> 
+                <a href="views/visitor.html">Visitor Details</a>
+                <a href="views/trip.html">Field Trip Program</a>
+                <a href="views/tours.html">City Tours</a>
+                <a href="views/shop.html">Gift Shop</a>
+            </nav>
+        </div>
+        <img src="static/banner.png" class="full-width" alt="A picture of the incline">
     </header>
 
-    <div>
+    <div class="container">
         <div>
-        <h2>Our History</h2>
-        <p>The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.</p>
-        <nav><a href="views/about.html">Learn More</a></nav>
+            <h2 class="dark-font">Our History</h2>
+            <p class="dark-font">The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.</p>
+            <nav><a href="views/about.html">Learn More</a></nav>
         </div>
     </div>
 
 
-    <footer id="footer"> 
+    <footer> 
         <!-- edit the footer style in css -->
         <p>Address</p>
         <p>Contact</p>

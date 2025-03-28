@@ -7,6 +7,116 @@
 --paynes-gray: #5a6b77ff;
 --sea-green: #2c803fff; */
 
-#footer {
-    background-color: #83fc91
+/* sets the default margin to 0 */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+* {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #eeddc9ff;
+    /* padding: 5px;
+    margin: 5px */
+}
+
+.dark-font {
+    color: #112d18ff;
+}
+
+/* for any element that does not need to be stretched to full size */
+.container {
+    padding: 5px;
+    margin: 5px
+}
+
+
+img.full-width {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+}
+
+#webname {
+    background-color: #92ad70;
+    color: #ffffff;
+}
+
+.current-page {
+    color: #eeddc9ff;
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #70b766ff;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+#sticky-header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #112d18ff;
+    color: #f1f1f1;
+  }
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a7c77f;
+    color: #723b1f;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: #ffffff
+}
+
+footer {
+    background-color: #112d18ff;
+}
+
+/* #inputInvalidMsg {
+    width: max-content;
+    margin: auto;
+} */
+
+/* .container {
+    border-radius: 100%; 
+    display: inline-block;
+    border-radius: 10%;
+} */
+
+/* .mainLayout {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px; 
+    min-height: 100vh; 
+}
+
+.subLayout {
+    flex-direction: column;
+    width: 600px;
+} */
+
+/* #map {
+    height: 400px; 
+    width: 400px; 
+} */

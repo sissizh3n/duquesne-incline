@@ -7,25 +7,28 @@
     <!-- <meta name="author" content="Your name">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Your name professional website"> -->
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./static/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- <img src="static/banner.png" alt="A picture of the incline" width="1280"> -->
-        <h1>Visitor Details</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../views/about.html">About</a>
-            <a href="../views/fares.html">Hours & Fares</a> 
-            <a href="../views/visitor.html">Visitor Details</a>
-            <a href="../views/trip.html">Field Trip Program</a>
-            <a href="../views/tours.html">City Tours</a>
-            <a href="../views/shop.html">Gift Shop</a>
-        </nav>
+        <div id="sticky-header">
+            <h2 class="container">Duquesne Incline</h2>
+            <nav class="container">
+                <a href="../index.html">Home</a>
+                <a href="../views/about.html">About</a>
+                <a href="../views/fares.html">Hours & Fares</a> 
+                <a class="current-page" href="../views/visitor.html">Visitor Details</a>
+                <a href="../views/trip.html">Field Trip Program</a>
+                <a href="../views/tours.html">City Tours</a>
+                <a href="../views/shop.html">Gift Shop</a>
+            </nav>
+        </div>
+        <img src="../static/banner.png" class="full-width" alt="A picture of the incline">
     </header>
+</body>
