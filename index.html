@@ -21,7 +21,7 @@
             </div>
             <nav class="container">
                 <a class="current-page" href="index.html">Home</a>
-                <a href="views/about.html">About</a>
+                <a href="views/history.html">History</a>
                 <a href="views/fares.html">Hours & Fares</a>
                 <div class="dropdown">
                 <a class="dropdown-btn" onclick="toggleDropdown()">Visitor Details</a>
@@ -43,7 +43,7 @@
         <div class="body-container">
             <div>
                 <h2 class="dark-font">Our History</h2>
-                <p class="dark-font">Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. 
+                <p class="body">Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. 
                     Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. 
                     The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.
                 </p>
@@ -53,14 +53,23 @@
     </main>
 
     <footer> 
-        <!-- edit the footer style in css -->
         <div class="footer">
-            <p>Address</p>
-            <p>Contact</p>
-            <p>Join Mailing List</p>
-            <button href="views/mailing.html">mailing list test</button>
+            <div class="column">
+                <p class="footer-title">Address</p>
+                <p>1197 West Carson Street<br>
+                    Pittsburgh, PA 15219<br>
+                    United States of America
+                </p>
+            </div>
+            <div class="column">
+                <p class="footer-title">Contact</p>
+                <p>Phone Number: 412.381.1665<br>
+                    Fax: 412.381.1943<br>
+                    Email: duq.incline@duquesneincline.org</p>
+            </div>
+            <a href="views/mailing.html" class="button">Join Our Mailing List</a>
         </div>
-        <h6 class="copyright">Copyright &copy; <span id="copyYear"></span>. All Rights Reserved.</h6>
+        <p class="copyright">Copyright &copy; <span id="copyYear"></span>. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
