@@ -15,8 +15,10 @@
 <body>
     <header>
         <div id="sticky-header">
-            <img src="static/" alt="Duquesne Incline logo">
-            <h2 class="container">Duquesne Incline</h2>
+            <div class="incline-block">
+                <img class="logo" src="static/logo.png" alt="Duquesne Incline logo">
+                <h3 class="container">Duquesne Incline</h3>
+            </div>
             <nav class="container">
                 <a class="current-page" href="index.html">Home</a>
                 <a href="views/about.html">About</a>
@@ -37,21 +39,28 @@
         <img src="static/banner.png" class="full-width" alt="A picture of the incline">
     </header>
 
-    <div class="container">
-        <div>
-            <h2 class="dark-font">Our History</h2>
-            <p class="dark-font">The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.</p>
-            <nav><a href="views/about.html">Learn More</a></nav>
+    <main>
+        <div class="body-container">
+            <div>
+                <h2 class="dark-font">Our History</h2>
+                <p class="dark-font">Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. 
+                    Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. 
+                    The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.
+                </p>
+                <!-- <nav><a href="views/about.html">Learn More</a></nav> -->
+            </div>
         </div>
-    </div>
-
+    </main>
 
     <footer> 
         <!-- edit the footer style in css -->
-        <p>Address</p>
-        <p>Contact</p>
-        <p>Join Mailing List</p>
-        <p>Copyright &copy; <span id="copyYear"></span>. All Rights Reserved.</p>
+        <div class="footer">
+            <p>Address</p>
+            <p>Contact</p>
+            <p>Join Mailing List</p>
+            <button href="views/mailing.html">mailing list test</button>
+        </div>
+        <h6 class="copyright">Copyright &copy; <span id="copyYear"></span>. All Rights Reserved.</h6>
     </footer>
 </body>
 </html>

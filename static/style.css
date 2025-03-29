@@ -11,6 +11,13 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+main {
+    flex: 1;
 }
 * {
     font-family: "Oswald", sans-serif;
@@ -26,8 +33,12 @@ html, body {
     color: #112d18ff;
 }
 .container {
-    padding: 10px;
-    margin: 10px
+    padding: 5px 10px;
+    margin: 10px;
+}
+.body-container {
+    padding: 0 10px;
+    margin: 100px;
 }
 img.full-width {
     width: 100%;
@@ -35,45 +46,41 @@ img.full-width {
     height: auto;
     display: block;
 }
-
+img.logo {
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+}
 #webname {
     background-color: #92ad70;
     color: #ffffff;
 }
-
 .current-page {
     color: rgb(136, 118, 98);
 }
-
 nav a {
     text-decoration: none;
     color: #70b766ff;
-    margin-right: 15px;
     font-weight: bold;
 }
-
 nav a:hover {
     background: #ffff;
     color: #112d18ff;
 }
-
 nav.container {
     display: flex;
-    gap: 15px;
+    gap: 100px;
     align-items: center;
     justify-content: space-evenly;
     align-items: center;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 #dropdown-btn {
     cursor: pointer;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -85,46 +92,74 @@ nav.container {
     padding: 0;
     margin: 0;
 }
-
 .dropdown-content.show {
     display: block;
 }
-
+.incline-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 #sticky-header {
     position: sticky;
     top: 0;
-    padding: 10px 16px;
+    padding: 10px 5%;
     background: #112d18ff;
     color: #f1f1f1;
-  }
-
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer {
+    background: #112d18ff;
+    width: 100%;
+}
+.footer {
+    display: flex;
+    padding: 10px 5%;
+    color: #f1f1f1;
+    align-items: center;
+    justify-content: space-evenly;
+}
 form * {
     display: block;
     margin: auto;
     text-align: center;
 }
-
 button {
     padding: 10px 20px;
     background-color: #a7c77f;
     color: #723b1f;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #45a049;
     color: #ffffff
 }
-
-footer {
+/* .footer {
     background-color: #112d18ff;
+} */
+.show {
+    display:block;
 }
-
-.show {display:block;}
-
 .dropdown {
     position: relative;
     /* display: inline-block; */
+}
+p {
+    font-size: 20px;
+}
+h6 {
+    font-size: 12px;
+}
+h3 {
+    font-size: 25px;
+}
+h2 {
+    font-size: 40px;
+}
+.copyright {
+    text-align: center;
 }
 
 /* #inputInvalidMsg {
