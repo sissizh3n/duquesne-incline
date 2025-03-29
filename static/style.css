@@ -7,13 +7,11 @@
 --paynes-gray: #5a6b77ff;
 --sea-green: #2c803fff; */
 
-/* sets the default margin to 0 */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 * {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -24,18 +22,13 @@ html, body {
     /* padding: 5px;
     margin: 5px */
 }
-
 .dark-font {
     color: #112d18ff;
 }
-
-/* for any element that does not need to be stretched to full size */
 .container {
-    padding: 5px;
-    margin: 5px
+    padding: 10px;
+    margin: 10px
 }
-
-
 img.full-width {
     width: 100%;
     margin: 0 auto;
@@ -49,8 +42,7 @@ img.full-width {
 }
 
 .current-page {
-    color: #eeddc9ff;
-    text-decoration: underline;
+    color: rgb(136, 118, 98);
 }
 
 nav a {
@@ -58,6 +50,44 @@ nav a {
     color: #70b766ff;
     margin-right: 15px;
     font-weight: bold;
+}
+
+nav a:hover {
+    background: #ffff;
+    color: #112d18ff;
+}
+
+nav.container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-btn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content.show {
+    display: block;
 }
 
 #sticky-header {
@@ -88,6 +118,13 @@ button:hover {
 
 footer {
     background-color: #112d18ff;
+}
+
+.show {display:block;}
+
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
 }
 
 /* #inputInvalidMsg {

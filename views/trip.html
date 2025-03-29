@@ -11,24 +11,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./static/script.js" defer></script>
+    <script src="../static/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
         <div id="sticky-header">
+            <img src="static/" alt="Duquesne Incline logo">
             <h2 class="container">Duquesne Incline</h2>
             <nav class="container">
                 <a href="../index.html">Home</a>
                 <a href="../views/about.html">About</a>
-                <a href="../views/fares.html">Hours & Fares</a> 
-                <a href="../views/visitor.html">Visitor Details</a>
-                <a class="current-page" href="../views/trip.html">Field Trip Program</a>
-                <a href="../views/tours.html">City Tours</a>
+                <a href="../views/fares.html">Hours & Fares</a>
+                <div class="dropdown">
+                <a class="current-page" id="dropdown-btn" onclick="toggleDropdown()">Visitor Details</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../views/directions.html">How to get here</a></li>
+                        <!-- inclues self-guided, group, & city tours -->
+                        <li><a href="../views/tours.html">Plan your visit with tours</a></li> 
+                        <li><a href="../views/trip.html">Field Trip Program for Students</a></li>
+                    </ul>
+                </div>
                 <a href="../views/shop.html">Gift Shop</a>
+                <a href="../views/faq.html">FAQs</a>
             </nav>
         </div>
         <img src="../static/banner.png" class="full-width" alt="A picture of the incline">
     </header>
+
 </body>
+</html>
