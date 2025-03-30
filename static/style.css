@@ -44,6 +44,9 @@ main {
     padding: 0 10px;
     margin: 100px;
 }
+/* p.body-container, h2.body-container {
+    color: #112d18ff;
+} */
 .column {
     display: flex;
     flex-direction: column;
@@ -294,38 +297,3 @@ p.footer-title {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* li.numList {
-    list-style: decimal;
-    font-size: 20px;
-    color: #112d18ff;
-} */
-/* #inputInvalidMsg {
-    width: max-content;
-    margin: auto;
-} */
-
-/* .container {
-    border-radius: 100%; 
-    display: inline-block;
-    border-radius: 10%;
-} */
-
-/* .mainLayout {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center; 
-    gap: 10px; 
-    padding: 10px; 
-    min-height: 100vh; 
-}
-
-.subLayout {
-    flex-direction: column;
-    width: 600px;
-} */
-
-/* #map {
-    height: 400px; 
-    width: 400px; 
-} */
