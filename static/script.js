@@ -42,43 +42,19 @@ function validateForm() {
     }
 }
 
-
-// async function initMap() {
-//   const position = { lat: 40.443490, lng: -79.941643 };
-//   const { Map } = await google.maps.importLibrary("maps");
-//   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-//   map = new Map(document.getElementById("map"), {
-//     zoom: 10,
-//     center: position,
-//     mapId: "DEMO_MAP_ID",
-//   });
-
-//   const marker = new AdvancedMarkerElement({
-//     map: map,
-//     position: position,
-//     title: "Pittsburgh",
-//   });
-// }
-
 let map;
 
 async function initMap() {
-  // The location of Uluru
   const position = { lat: 40.439863, lng: -80.017589 };
-  // Request needed libraries.
-  //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
   map = new Map(document.getElementById("map"), {
     zoom: 15,
     center: position,
     mapId: "DEMO_MAP_ID",
   });
 
-  // The marker, positioned at Uluru
   const marker = new AdvancedMarkerElement({
     map: map,
     position: position,
@@ -86,4 +62,29 @@ async function initMap() {
   });
 }
 
-// initMap();
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
