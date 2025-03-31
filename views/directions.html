@@ -35,11 +35,12 @@
                 <a href="../views/history.html">History</a>
                 <a href="../views/fares.html">Hours & Fares</a>
                 <div class="dropdown">
-                <a class="current-page" id="dropdown-btn" onclick="toggleDropdown()">Visitor Details</a>
-                    <ul class="dropdown-content">
+                    <button class="dropdown-btn" id="dropdown-nav" onclick="toggleDropdown()" aria-haspopup="true" aria-expanded="false">
+                        Visitor Details
+                    </button>
+                    <ul class="dropdown-content" id="dropdown-menu">
                         <li><a href="../views/directions.html">How to get here</a></li>
-                        <!-- inclues self-guided, group, & city tours -->
-                        <li><a href="../views/tours.html">Plan your visit with tours</a></li> 
+                        <li><a href="../views/tours.html">Plan your visit with tours</a></li>
                         <li><a href="../views/trip.html">Field Trip Program for Students</a></li>
                     </ul>
                 </div>
